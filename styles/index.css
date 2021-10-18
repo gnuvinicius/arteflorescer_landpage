@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+    background-color: #000000;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    color: #d1d1d1;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background-color: #2B3B31;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f0f0f0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background-color: #245437;
+    color: #d1d1d1;
+}
+
+.footer .info {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-icon {
+    cursor: pointer;
+    width: 30px;
+}
+
+#box1 {
+    position: absolute;
+    height: 350px;
+    right: 60px;
+    background-color: pink;
+}
