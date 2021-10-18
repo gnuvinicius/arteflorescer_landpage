@@ -2,8 +2,35 @@ html, body {
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../static/fonts/Roboto-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../static/fonts/Roboto-Bold.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../static/fonts/Roboto-Thin.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
 p {
     margin: 0;
+    font-family: 'Roboto-Bold';
+}
+
+
+@keyframes content-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes content-info-animation {
+    from { opacity: 0; margin-top: 60px; }
+    to { opacity: 1; margin-top: 0; }
 }
 
 .main {
@@ -12,36 +39,48 @@ p {
     width: 100%;
 }
 
-.header {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 40px;
-    background-color: #000000;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    color: #d1d1d1;
-}
-
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
-    background-color: #2B3B31;
+    height: 520px;
+    background-color: #FFF9EE;
+}
+
+.logo {
+    width: 450px;
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    background-color: #f0f0f0;
+    max-height: 600px;
+    min-height: 600px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+#info {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    animation-name: content-info-animation;
+    animation-duration: 2s;
+    padding-left: 60px;
+    font-size: 82px;
+    z-index: 100;
+}
+
+#info .subinfo {
+    font-family: 'Roboto-Thin';
+    font-size: 32px;
+}
+
+
+.imagem {
+    width: 60%;
+    
 }
 
 .footer {
@@ -49,8 +88,8 @@ p {
     justify-content: center;
     align-items: center;
     height: 350px;
-    background-color: #245437;
-    color: #d1d1d1;
+    background-color: #8298B3;
+    color: #ffffff;
 }
 
 .footer .info {
@@ -69,14 +108,21 @@ p {
     align-items: center;
 }
 
+.info.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .instagram-icon {
     cursor: pointer;
     width: 30px;
+    color: #ffffff;
 }
 
 #box1 {
-    position: absolute;
-    height: 350px;
-    right: 60px;
-    background-color: pink;
+    display: none;
+    height: 450px;
+    animation-name: content-animation;
+    animation-duration: 2s;
 }

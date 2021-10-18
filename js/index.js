@@ -1,15 +1,17 @@
-window.scrollTo({ top: 0, behavior: 'smooth' })
+// window.scrollTo({ top: 0, behavior: 'smooth' })
 
 
+const info = document.getElementById('info');
 const box1 = document.getElementById('box1');
+
 
 
 window.addEventListener('scroll', (event) => {
     let scroll = this.scrollY;
-    console.log(scroll);
 
-    if (scroll >= 80 && scroll < 200) {
-        box1.style.right = `${scroll}px`
+    if (scroll >= 420 ) {
+        box1.style.display = 'flex'
+        info.style.display = 'flex'
     }
 });
 
